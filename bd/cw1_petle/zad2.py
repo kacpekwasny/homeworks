@@ -34,7 +34,7 @@ def hasNumber(start1, start2, number):
             return False, []
 
 def main():
-    for i, j in genSmallestSums(1000000):
+    for i, j in genSmallestSums(2020):
         has, parts = hasNumber(i, j, 2020)
         if has:
             print(f"found for i={i}, j={j}")
