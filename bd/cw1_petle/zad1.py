@@ -1,3 +1,4 @@
+# Proszę napisać program wypisujący elementy ciągu Fibonacciego mniejsze od miliona.
 
 i, j, nxt = 1, 1, 2
 
