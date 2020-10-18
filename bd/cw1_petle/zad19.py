@@ -31,7 +31,7 @@ def comp_e(loops):
     # not using float to be able to use a bigger number
     elim = 2 * mult
 
-    # simple aproximation with float
+    # simple approximation with float
     elimf = 2
     while reps < loops:
         # adding one to factorial
@@ -63,21 +63,21 @@ def comp_e(loops):
 
 
     if elimscorr == elimsfull:
-        print("Whole aproximation is correct:")
-        print(f"    Aproximation using int with a power - len={len(elimsfull)-1}:\n", elimsfull[:100]+ "..." if len(elimsfull)>99 else "", end="\n", sep="")
+        print("Whole approximation is correct:")
+        print(f"    Approximation using int with a power - len={len(elimsfull)-1}:\n", elimsfull[:100]+ "..." if len(elimsfull)>99 else "", end="\n", sep="")
         shortPrint(elimsfull, toBigPrint)
 
     else:
-        print(f"Aproximation using int with a power - len={len(elimsfull)-1}:\n", elimsfull[:100]+ "..." if len(elimsfull)>99 else "", end="\n", sep="")
+        print(f"Approximation using int with a power - len={len(elimsfull)-1}:\n", elimsfull[:100]+ "..." if len(elimsfull)>99 else "", end="\n", sep="")
         shortPrint(elimsfull, toBigPrint)
 
         print("") # for line space
 
-        print(f"Part of aproximation using int with a power that is correct - len={len(elimscorr)-1} :\n", elimscorr[:100]+ "..." if len(elimscorr)>99 else "", end="\n", sep="")
+        print(f"Part of approximation using int with a power that is correct - len={len(elimscorr)-1} :\n", elimscorr[:100]+ "..." if len(elimscorr)>99 else "", end="\n", sep="")
         shortPrint(elimscorr, toBigPrint)
     
     print("") # for line space
-    print("Aproximation using float:\n", elimf, end="\n")
+    print("Approximation using float:\n", elimf, end="\n")
     
 
 def sameTillNumber(numStr1, numStr2) -> int:
